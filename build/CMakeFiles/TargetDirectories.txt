@@ -1,0 +1,3 @@
+C:/Users/harri/OneDrive/Desktop/KratosRuntime/build/CMakeFiles/KratosRuntime.dir
+C:/Users/harri/OneDrive/Desktop/KratosRuntime/build/CMakeFiles/edit_cache.dir
+C:/Users/harri/OneDrive/Desktop/KratosRuntime/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,6 @@
+# ninja log v6
+51	108	7785826265602971	lib/KratosRuntime-v1.0.0-Windows-AMD64.a	eba68c7489c404a1
+9	50	7785826265190921	CMakeFiles/KratosRuntime.dir/src/test.cpp.obj	13c2c5d51e5d55ae
+19	62	7785826519630353	CMakeFiles/KratosRuntime.dir/src/test.cpp.obj	378a140327346da6
+62	142	7785826520786891	bin/KratosRuntime-v1.0.0-Windows-AMD64.dll	d62d28f2110e0fd7
+62	142	7785826520786891	lib/libKratosRuntime-v1.0.0-Windows-AMD64.dll.a	d62d28f2110e0fd7
