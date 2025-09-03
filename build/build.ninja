@@ -50,9 +50,10 @@ cmake_ninja_workdir = C$:/Users/harri/OneDrive/Desktop/KratosRuntime/build/
 build cmake_object_order_depends_target_KratosRuntime: phony || .
 
 build CMakeFiles/KratosRuntime.dir/src/test.cpp.obj: CXX_COMPILER__KratosRuntime_unscanned_Release C$:/Users/harri/OneDrive/Desktop/KratosRuntime/src/test.cpp || cmake_object_order_depends_target_KratosRuntime
-  DEFINES = -DKratosRuntime_EXPORTS
+  DEFINES = -DEXPORTS -DKratosRuntime_EXPORTS -DWINDOWS
   DEP_FILE = CMakeFiles\KratosRuntime.dir\src\test.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++20
+  INCLUDES = -IC:/Users/harri/OneDrive/Desktop/KratosRuntime/include
   OBJECT_DIR = CMakeFiles\KratosRuntime.dir
   OBJECT_FILE_DIR = CMakeFiles\KratosRuntime.dir\src
 

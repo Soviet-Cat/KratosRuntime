@@ -14,7 +14,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Local directories
 set(SRC ${CMAKE_CURRENT_SOURCE_DIR}/src)
-set(INC ${CMAKE_CURRENT_BINARY_DIR}/include)
+set(INC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 set(BIN ${CMAKE_CURRENT_BINARY_DIR}/bin)
 set(LIB ${CMAKE_CURRENT_BINARY_DIR}/lib)
 
@@ -23,7 +23,7 @@ set(KratosRuntimeStatic OFF CACHE BOOL "Wether to build KratosRuntime as a stati
 
 # Sources
 set(KratosRuntimeSources 
-    
+    ${SRC}/test.cpp
 )
 
 # Library type
@@ -41,7 +41,15 @@ set(CMAKE_SHARED_LIBRARY_PREFIX "")
 set_target_properties(KratosRuntime PROPERTIES
     OUTPUT_NAME KratosRuntime-v${PROJECT_VERSION}-${CMAKE_SYSTEM_NAME}-${CMAKE_SYSTEM_PROCESSOR}
     VERSION ${PROJECT_VERSION}
+    POSITION_INDEPENDENT_CODE ON
     RUNTIME_OUTPUT_DIRECTORY ${BIN}
     LIBRARY_OUTPUT_DIRECTORY ${LIB}
     ARCHIVE_OUTPUT_DIRECTORY ${LIB}
 )
+target_include_directories(KratosRuntime PRIVATE ${INC})
+
+# Exporting
+target_compile_definitions(KratosRuntime PRIVATE EXPORTS)
+if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    target_compile_definitions(KratosRuntime PRIVATE WINDOWS)
+endif()
