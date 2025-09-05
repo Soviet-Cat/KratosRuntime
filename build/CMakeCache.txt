@@ -235,6 +235,9 @@ KratosRuntimeDebug:UNINITIALIZED=ON
 // OFF - shared.
 KratosRuntimeStatic:BOOL=OFF
 
+//Wether to build the test executable for KratosRuntime.
+KratosRuntimeTest:BOOL=ON
+
 //Value Computed by CMake
 KratosRuntime_BINARY_DIR:STATIC=C:/Users/harri/OneDrive/Desktop/KratosRuntime/build
 

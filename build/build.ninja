@@ -49,13 +49,21 @@ cmake_ninja_workdir = C$:/Users/harri/OneDrive/Desktop/KratosRuntime/build/
 
 build cmake_object_order_depends_target_KratosRuntime: phony || .
 
-build CMakeFiles/KratosRuntime.dir/src/test.cpp.obj: CXX_COMPILER__KratosRuntime_unscanned_Release C$:/Users/harri/OneDrive/Desktop/KratosRuntime/src/test.cpp || cmake_object_order_depends_target_KratosRuntime
+build CMakeFiles/KratosRuntime.dir/src/kratos_platform.cpp.obj: CXX_COMPILER__KratosRuntime_unscanned_Release C$:/Users/harri/OneDrive/Desktop/KratosRuntime/src/kratos_platform.cpp || cmake_object_order_depends_target_KratosRuntime
   DEFINES = -DEXPORTS -DKratosRuntime_EXPORTS -DWINDOWS
-  DEP_FILE = CMakeFiles\KratosRuntime.dir\src\test.cpp.obj.d
+  DEP_FILE = CMakeFiles\KratosRuntime.dir\src\kratos_platform.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++20
   INCLUDES = -IC:/Users/harri/OneDrive/Desktop/KratosRuntime/include
   OBJECT_DIR = CMakeFiles\KratosRuntime.dir
   OBJECT_FILE_DIR = CMakeFiles\KratosRuntime.dir\src
+
+build CMakeFiles/KratosRuntime.dir/src/platforms/Windows.cpp.obj: CXX_COMPILER__KratosRuntime_unscanned_Release C$:/Users/harri/OneDrive/Desktop/KratosRuntime/src/platforms/Windows.cpp || cmake_object_order_depends_target_KratosRuntime
+  DEFINES = -DEXPORTS -DKratosRuntime_EXPORTS -DWINDOWS
+  DEP_FILE = CMakeFiles\KratosRuntime.dir\src\platforms\Windows.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++20
+  INCLUDES = -IC:/Users/harri/OneDrive/Desktop/KratosRuntime/include
+  OBJECT_DIR = CMakeFiles\KratosRuntime.dir
+  OBJECT_FILE_DIR = CMakeFiles\KratosRuntime.dir\src\platforms
 
 
 # =============================================================================
@@ -65,7 +73,7 @@ build CMakeFiles/KratosRuntime.dir/src/test.cpp.obj: CXX_COMPILER__KratosRuntime
 #############################################
 # Link the shared library bin\KratosRuntime-v1.0.0-Windows-AMD64.dll
 
-build bin/KratosRuntime-v1.0.0-Windows-AMD64.dll lib/libKratosRuntime-v1.0.0-Windows-AMD64.dll.a: CXX_SHARED_LIBRARY_LINKER__KratosRuntime_Release CMakeFiles/KratosRuntime.dir/src/test.cpp.obj
+build bin/KratosRuntime-v1.0.0-Windows-AMD64.dll lib/libKratosRuntime-v1.0.0-Windows-AMD64.dll.a: CXX_SHARED_LIBRARY_LINKER__KratosRuntime_Release CMakeFiles/KratosRuntime.dir/src/kratos_platform.cpp.obj CMakeFiles/KratosRuntime.dir/src/platforms/Windows.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\KratosRuntime.dir
@@ -75,6 +83,40 @@ build bin/KratosRuntime-v1.0.0-Windows-AMD64.dll lib/libKratosRuntime-v1.0.0-Win
   TARGET_FILE = bin\KratosRuntime-v1.0.0-Windows-AMD64.dll
   TARGET_IMPLIB = lib\libKratosRuntime-v1.0.0-Windows-AMD64.dll.a
   TARGET_PDB = KratosRuntime-v1.0.0-Windows-AMD64.dll.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target KratosRuntimeExec
+
+
+#############################################
+# Order-only phony target for KratosRuntimeExec
+
+build cmake_object_order_depends_target_KratosRuntimeExec: phony || cmake_object_order_depends_target_KratosRuntime
+
+build CMakeFiles/KratosRuntimeExec.dir/src/test.cpp.obj: CXX_COMPILER__KratosRuntimeExec_unscanned_Release C$:/Users/harri/OneDrive/Desktop/KratosRuntime/src/test.cpp || cmake_object_order_depends_target_KratosRuntimeExec
+  DEP_FILE = CMakeFiles\KratosRuntimeExec.dir\src\test.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++20
+  INCLUDES = -IC:/Users/harri/OneDrive/Desktop/KratosRuntime/include
+  OBJECT_DIR = CMakeFiles\KratosRuntimeExec.dir
+  OBJECT_FILE_DIR = CMakeFiles\KratosRuntimeExec.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target KratosRuntimeExec
+
+
+#############################################
+# Link the executable bin\KratosRuntimeTest-v1.0.0-Windows-AMD64.exe
+
+build bin/KratosRuntimeTest-v1.0.0-Windows-AMD64.exe: CXX_EXECUTABLE_LINKER__KratosRuntimeExec_Release CMakeFiles/KratosRuntimeExec.dir/src/test.cpp.obj | lib/libKratosRuntime-v1.0.0-Windows-AMD64.dll.a || bin/KratosRuntime-v1.0.0-Windows-AMD64.dll
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = lib/libKratosRuntime-v1.0.0-Windows-AMD64.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\KratosRuntimeExec.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = bin\KratosRuntimeTest-v1.0.0-Windows-AMD64.exe
+  TARGET_IMPLIB = lib\libKratosRuntimeTest-v1.0.0-Windows-AMD64.dll.a
+  TARGET_PDB = KratosRuntimeTest-v1.0.0-Windows-AMD64.exe.dbg
 
 
 #############################################
@@ -107,6 +149,10 @@ build KratosRuntime: phony bin/KratosRuntime-v1.0.0-Windows-AMD64.dll
 
 build KratosRuntime-v1.0.0-Windows-AMD64.dll: phony bin/KratosRuntime-v1.0.0-Windows-AMD64.dll
 
+build KratosRuntimeExec: phony bin/KratosRuntimeTest-v1.0.0-Windows-AMD64.exe
+
+build KratosRuntimeTest-v1.0.0-Windows-AMD64.exe: phony bin/KratosRuntimeTest-v1.0.0-Windows-AMD64.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -115,7 +161,7 @@ build KratosRuntime-v1.0.0-Windows-AMD64.dll: phony bin/KratosRuntime-v1.0.0-Win
 #############################################
 # Folder: C:/Users/harri/OneDrive/Desktop/KratosRuntime/build
 
-build all: phony bin/KratosRuntime-v1.0.0-Windows-AMD64.dll
+build all: phony bin/KratosRuntime-v1.0.0-Windows-AMD64.dll bin/KratosRuntimeTest-v1.0.0-Windows-AMD64.exe
 
 # =============================================================================
 # Built-in targets
