@@ -29,10 +29,11 @@ install() {
 }
 
 cache() {
+    cache() {
     cmake -LAH -B build > build/cache.cmake
     while IFS= read -r line; do
         key=$(echo "$line" | cut -d':' -f1 | xargs)
-        value=$(echo "$line" | cut -d':' -f2- | xargs)
+        value=$(echo "$line" | grep -oP '(?<=:STRING=).*')
         case "$key" in
             "PROJECT_VERSION") PROJECT_VERSION="$value" ;;
             "CMAKE_BUILD_TYPE") CMAKE_BUILD_TYPE="$value" ;;
@@ -40,6 +41,7 @@ cache() {
             "CMAKE_SYSTEM_PROCESSOR") CMAKE_SYSTEM_PROCESSOR="$value" ;;
         esac
     done < build/cache.cmake
+}
 }
 
 package() {

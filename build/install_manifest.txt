@@ -1,6 +1,0 @@
-C:/Users/harri/OneDrive/Desktop/KratosRuntime/install/lib/libKratosRuntime.dll.a
-C:/Users/harri/OneDrive/Desktop/KratosRuntime/install/bin/KratosRuntime.dll
-C:/Users/harri/OneDrive/Desktop/KratosRuntime/install/lib/cmake/Kratos/KratosRuntimeConfig.cmake
-C:/Users/harri/OneDrive/Desktop/KratosRuntime/install/lib/cmake/Kratos/KratosRuntimeConfigVersion.cmake
-C:/Users/harri/OneDrive/Desktop/KratosRuntime/install/lib/cmake/Kratos/KratosRuntimeTargets.cmake
-C:/Users/harri/OneDrive/Desktop/KratosRuntime/install/lib/cmake/Kratos/KratosRuntimeTargets-release.cmake

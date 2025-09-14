@@ -1,6 +1,0 @@
-# ninja log v6
-130	207	7795917702202648	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntimeTest-1.0.0-Windows-AMD64.exe	60600dbe73086f9a
-51	130	7795917702133355	C:/Users/harri/OneDrive/Desktop/KratosRuntime/lib/libKratosRuntime.dll.a	98c4018adf0d6a72
-51	130	7795917702133355	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntime.dll	98c4018adf0d6a72
-12	66	7795917701024822	CMakeFiles/KratosRuntimeTest.dir/test/main.c.obj	67f8a80caa4592de
-9	50	7795917700991093	CMakeFiles/KratosRuntime.dir/src/test.c.obj	7a469b4ed9fc2b1d
