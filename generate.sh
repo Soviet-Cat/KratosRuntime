@@ -29,7 +29,6 @@ install() {
 }
 
 cache() {
-    cache() {
     cmake -LAH -B build > build/cache.cmake
     while IFS= read -r line; do
         key=$(echo "$line" | cut -d':' -f1 | xargs)
@@ -41,7 +40,6 @@ cache() {
             "CMAKE_SYSTEM_PROCESSOR") CMAKE_SYSTEM_PROCESSOR="$value" ;;
         esac
     done < build/cache.cmake
-}
 }
 
 package() {
