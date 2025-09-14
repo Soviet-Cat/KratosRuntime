@@ -1,5 +1,10 @@
 {
     "cSpell.words": [
         "Kratos"
-    ]
+    ],
+    "files.associations": {
+        "float.h": "c",
+        "stdint.h": "c",
+        "stdio.h": "c"
+    }
 }
