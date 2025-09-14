@@ -1,16 +1,6 @@
 # ninja log v6
-19	72	7794206891366567	CMakeFiles/KratosRuntime.dir/src/test.c.obj	c762a74efb03f834
-72	200	7794206893080260	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntime-1.0.0-Windows-AMD64.dll	e0b10121859f064d
-72	200	7794206893080260	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/libKratosRuntime-1.0.0-Windows-AMD64.dll.a	e0b10121859f064d
-1	66	7794207700297069	CMakeFiles/KratosRuntimeTest.dir/test/main.c.obj	424aea15eeec9a26
-67	155	7794207700952066	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntimeTest-1.0.0-Windows-AMD64.exe	5c02a0782961533
-3	94	7794208012771488	CMakeFiles/KratosRuntimeTest.dir/test/main.c.obj	424aea15eeec9a26
-95	192	7794208013697260	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntimeTest-1.0.0-Windows-AMD64.exe	5c02a0782961533
-3	70	7794212799921573	CMakeFiles/KratosRuntimeTest.dir/test/main.c.obj	424aea15eeec9a26
-70	154	7794212800593471	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntimeTest-1.0.0-Windows-AMD64.exe	5c02a0782961533
-15	81	7794213170169581	CMakeFiles/KratosRuntimeTest.dir/test/main.c.obj	424aea15eeec9a26
-81	190	7794213170841705	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntimeTest-1.0.0-Windows-AMD64.exe	5c02a0782961533
-3	69	7794220756167094	CMakeFiles/KratosRuntimeTest.dir/test/main.c.obj	424aea15eeec9a26
-69	160	7794220756832899	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntimeTest-1.0.0-Windows-AMD64.exe	5c02a0782961533
-17	86	7794221109814462	CMakeFiles/KratosRuntimeTest.dir/test/main.c.obj	424aea15eeec9a26
-86	182	7794221110505418	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntimeTest-1.0.0-Windows-AMD64.exe	5c02a0782961533
+130	207	7795917702202648	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntimeTest-1.0.0-Windows-AMD64.exe	60600dbe73086f9a
+51	130	7795917702133355	C:/Users/harri/OneDrive/Desktop/KratosRuntime/lib/libKratosRuntime.dll.a	98c4018adf0d6a72
+51	130	7795917702133355	C:/Users/harri/OneDrive/Desktop/KratosRuntime/bin/KratosRuntime.dll	98c4018adf0d6a72
+12	66	7795917701024822	CMakeFiles/KratosRuntimeTest.dir/test/main.c.obj	67f8a80caa4592de
+9	50	7795917700991093	CMakeFiles/KratosRuntime.dir/src/test.c.obj	7a469b4ed9fc2b1d
